@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+      .about-me {
+          flex-direction: column;
+          text-align: center;
+          gap: 20px;
+      }
+  
+      .about-me img,
+      .text {
+          width: 100%;
+      }
+  
+      .nav {
+          width: 100%;
+          left: 0;
+          transform: none; 
+      }
+  
+      .nav, ul, a {
+          max-width: 700px; 
+          margin: 0 auto;   
+      }
+  
+      .nav a {
+          font-size: 1.5rem;
+      }
+  }
+
+    
+html{
+      font-size: 100%;
+      font-family: 'BlinkMacSystemFont', 'Segoe UI', Roboto, 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    
+body{
+      font-size: 1rem;
+      font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background:linear-gradient(to right, whitesmoke, white);
+}
+header, .hero, footer{
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px;
+      text-align: center;
+}
+header>h1{
+      font-size: 3rem;
+      margin: 40px 0;
+      padding: 5px;
+      font-style: normal;
+}
+.nav{
+      width: 100%;
+      margin: 0 auto;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      padding: 10px 0;    
+}
+.nav, ul, a{
+      list-style: none;
+      text-decoration: none;
+      text-align: center;
+      font-size: 2rem;
+      width: 100%;
+      /* max-width: 700px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+     
+}
+a{
+      color: darkslategray;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+     
+}
+a:visited{
+      color: black;
+}
+a:hover, .about-me img:hover{
+      color: firebrick;
+      transform: scaleX(1.1);
+      transition: 0.5s ease-in-out;
+}
+.hero{
+      margin-bottom: 10px;
+      padding: 5px;
+      font-style: normal;
+      font-weight: lighter;
+}
+.hero h2{
+      font-size: 2.5rem;
+      line-height: 2;
+}
+h2 + p{
+      font-weight: lighter;
+      font-size: 2rem;
+      line-height: 1.5;
+}
+.blog-posts{
+      border: 1px solid black;
+      border-radius: 15px;
+      background-color: darkslategray;
+      margin: 20px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: 0.9s;
+}
+.blog-posts:hover{
+      background-color: whitesmoke;
+}
+.post{
+      background-color: whitesmoke;
+      font-weight: light;
+      font-size: 1.3rem;
+      border: 1px solid black;
+      text-align: center;
+      outline: 5px outset whitesmoke;
+      border-radius: 15px;
+      margin: 5px;
+      padding: 5px;
+
+}
+h3, .paragraph-posts{
+      margin-bottom: 8px;
+}
+.paragraph-posts{
+      font-size: 1.28rem;
+}
+.paragraph-posts:hover{
+      background-color: white;
+}
+#read-more1{
+      margin-bottom: 5px;
+}
+#read-more2{
+      margin-top: 70px;
+}
+#read-more3{
+      margin-top: 40px;
+}
+#read-more4{
+      margin-top: 40px;
+}
+footer{
+      font-size: 2rem;
+      margin-bottom: 10px;
+      padding: 5px;
+      font-style: normal;
+}
+.about-me{
+      width: 90%;
+      max-width: 900px;
+      height: auto;
+      min-height: 100vh;
+      background-color: darkslategrey;
+      margin: 30px auto;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      border-radius: 30px;
+      outline: 2px outset rgb(rgb(202, 41, 41), rgb(102, 201, 102), rgb(56, 56, 151));
+      color: rgba(255, 255, 255, 0.795);
+      overflow: hidden;
+}
+.about-me img{  
+      display: flex;
+      width: 45%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      object-fit: cover;
+}
+a, .about-me img {
+      transition: transform 0.5s ease-in-out, color 0.3s ease;
+    }
+    
+.text{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+.text>h1{
+      color: whitesmoke;
+      font-size: 1.88rem;
+      text-align: center;
+}
+h1+p{
+      font-weight: lighter;
+      font-size: 1.6rem;
+      text-align: center;
+      margin: 10px 10px;
+}
+
+main{
+      width: 90%;
+      max-width: 800px;
+      background-color: whitesmoke;
+      border: 2px outset;
+      border-radius: 10px;
+      margin: 30px auto;
+      padding: 20px 20px;
+      line-height: 2;
+}
+main h1{
+      text-align: center;
+      font-size: 2rem;
+}
+h1 + p{
+      text-align: center;
+      font-size: 1.7rem;
+}
+input, label{
+      display: block;
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 10px;
+}
+input, button{
+      height: 50px;
+      outline: 2px solid crimson;
+}
+::placeholder{
+      font-size: 1.2rem;
+}
+button{
+      display: block;
+      width: 20%;
+      margin: 30px auto;
+      padding: 10px auto;
+      font-size: 1.5rem;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: white;
+}
+button:hover, input:hover{
+      background-color: bisque;
+      transition: 0.5s ease-in-out;
+}
+button:focus {
+      outline: 2px solid firebrick;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    
+input:focus, button:focus{
+      transform: scaleX(1.1);
+}
+.achievements{
+      background:linear-gradient(to right, darkslategray, black);
+      border: none;
+      text-align: center;
+      color: whitesmoke;
+}
+.edu-achievements{
+      margin-bottom: 30px;  
+    }
+.edu-achievements h2, .work-experience h2, .hobbies h2{
+      font-size: 2rem;
+}
+.edu-achievements p, .work-experience p, .hobbies p{
+      font-size: 1.7rem;
+      font-style: italic;
+      margin-bottom: 15px;
+      font-weight: bold;
+}
+p.details{
+      font-style: normal;
+      font-size: 1.57rem;
+      font-weight: normal;
+      margin-bottom: 2rem;
+}
+footer{
+      background:linear-gradient(to left, whitesmoke, darkslategrey);
+      border-radius: 10px;
+      transition: 0.6s ease-out;
+}
+footer:hover{
+      background:linear-gradient(to left, darkslategrey, whitesmoke);
+      transform: scaleX(1.1);
+    }
+    @media (max-width: 768px) {
+      footer {
+        padding: 10px;
+      }
+    }
